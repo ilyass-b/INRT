@@ -250,27 +250,34 @@ footer {
     Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('../images/WALPAPER\ TEST\ .png') 50% 0 repeat-y fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    color: #ffffff;
-    display: -webkit-box;
-    display: -webkit-flex;
-     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-     -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-    height: 100vh;
-    text-align: center;
+  background: url('../images/logo_int-removebg-preview.png') no-repeat center center fixed;
+  background-size: contain !important; 
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+#intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  background: rgba(0, 0, 0, 0.5); 
 }
 
 #intro h3 {
   letter-spacing: 2px;
 }
 
+@media (max-width: 980px) {
+  #intro {
+  }
+}
 
 
 /*---------------------------------------
@@ -677,7 +684,7 @@ footer {
 	line-height: 20px;
   }
 
-  #intro { height: 65vh; }
+  /* #intro { height: 65vh; } */
 
   #video iframe {
     margin-top: 42px;
@@ -723,7 +730,7 @@ footer {
 @media (max-width: 760px) {
 
   #intro {
-    height: 100vh;
+    height: 80vh;
   }
 
 }
