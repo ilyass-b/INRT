@@ -274,10 +274,7 @@ footer {
   letter-spacing: 2px;
 }
 
-@media (max-width: 980px) {
-  #intro {
-  }
-}
+
 
 
 /*---------------------------------------
@@ -501,17 +498,17 @@ footer {
   padding: 10px 15px;
 }
 
-#faq .panel-heading .panel-title a[data-toggle="collapse"]::after {
+#faq .panel-heading .panel-title a[data-toggle="collapse"]::before {
   content: "-";
   display: block;
   position: absolute;
   line-height: 1;
-  right: 1em;
+  left: 1em;
   top: 50%;
   transform: translateY(-50%);
 }
 
-#faq .panel-heading .panel-title a[data-toggle="collapse"].collapsed::after {
+#faq .panel-heading .panel-title a[data-toggle="collapse"].collapsed::before {
   content: "+";
 }
 
@@ -871,6 +868,11 @@ footer {
 }
 
 
+.nounous{
+  padding-top: 5rem !important;
+  background-color: #f9f9f9;
+}
+
 
 /* pagination */
 ul.pagination{
@@ -948,7 +950,7 @@ background-color: transparent;
 .plus-container{
   width: 100%;
   display: flex;
- justify-content: end;
+ /* justify-content: end; */
 margin-top: 15px;
 }
 
